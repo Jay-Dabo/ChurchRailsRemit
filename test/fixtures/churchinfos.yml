@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  name_alias: MyString
+  : 
+  addln1: MyString
+  addln2: MyString
+  zone: 1
+  district: 1
+
+two:
+  name: MyString
+  name_alias: MyString
+  : 
+  addln1: MyString
+  addln2: MyString
+  zone: 1
+  district: 1

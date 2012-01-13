@@ -1,0 +1,45 @@
+<%= form_for(@churchinfo) do |f| %>
+  <% if @churchinfo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@churchinfo.errors.count, "error") %> prohibited this churchinfo from being saved:</h2>
+
+      <ul>
+      <% @churchinfo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :name_alias %><br />
+    <%= f.text_field :name_alias %>
+  </div>
+  <div class="field">
+    <%= f.label : %><br />
+    <%= f.text_field : %>
+  </div>
+  <div class="field">
+    <%= f.label :addln1 %><br />
+    <%= f.text_field :addln1 %>
+  </div>
+  <div class="field">
+    <%= f.label :addln2 %><br />
+    <%= f.text_field :addln2 %>
+  </div>
+  <div class="field">
+    <%= f.label :zone %><br />
+    <%= f.number_field :zone %>
+  </div>
+  <div class="field">
+    <%= f.label :district %><br />
+    <%= f.number_field :district %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

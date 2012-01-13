@@ -1,0 +1,2 @@
+module ChurchinfosHelper
+end

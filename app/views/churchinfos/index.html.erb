@@ -1,0 +1,35 @@
+<h1>Listing churchinfos</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Name alias</th>
+    <th></th>
+    <th>Addln1</th>
+    <th>Addln2</th>
+    <th>Zone</th>
+    <th>District</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @churchinfos.each do |churchinfo| %>
+  <tr>
+    <td><%= churchinfo.name %></td>
+    <td><%= churchinfo.name_alias %></td>
+    <td><%= churchinfo. %></td>
+    <td><%= churchinfo.addln1 %></td>
+    <td><%= churchinfo.addln2 %></td>
+    <td><%= churchinfo.zone %></td>
+    <td><%= churchinfo.district %></td>
+    <td><%= link_to 'Show', churchinfo %></td>
+    <td><%= link_to 'Edit', edit_churchinfo_path(churchinfo) %></td>
+    <td><%= link_to 'Destroy', churchinfo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Churchinfo', new_churchinfo_path %>

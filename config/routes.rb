@@ -1,4 +1,14 @@
 ChurchRailsRemit::Application.routes.draw do
+  get "transpages/remit_offer-types"
+
+  get "transpages/monthly_remit"
+
+  get "transpages/wkly_incmome"
+
+  get "transpages/wkly_inc_types"
+
+  resources :churchinfos
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
